@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.hackslash.d2k.Login"
+    tools:showIn="@layout/activity_login">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@drawable/ucobank_logo"
+        android:layout_alignParentTop="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+
+        android:id="@+id/login">
+    <include layout="@layout/login_box"/>
+    <include layout="@layout/password_box"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:id="@+id/login_button"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@+id/login_button"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyright@ D2K Technologies"
+        android:layout_alignParentBottom="true"
+        android:textSize="10dp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

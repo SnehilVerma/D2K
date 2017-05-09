@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackslash.d2k.MainActivity">
+
+    <include layout="@layout/content_main"/>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/yellow"
+            android:titleTextColor="@android:color/background_dark"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="case_click"
+        android:clickable="true"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/header1"
+        >
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+
+
+        android:id="@+id/category"
+        android:textSize="15dp"
+        android:gravity="center_vertical"
+
+        android:background="@color/colorPrimary"
+        android:text="Case Pending"
+
+
+        />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:layout_gravity="end"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/category"
+            android:id="@+id/count"
+            android:textAlignment="textEnd"
+
+            android:textSize="15dp"
+            android:background="@color/colorPrimary"
+            android:text="120"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+
+        android:textColor="@android:color/white"
+        android:padding="10sp"
+
+        android:layout_below="@+id/header1"
+
+
+        android:id="@+id/company"
+        android:textSize="15dp"
+        android:background="@color/colorPrimary"
+        android:text="ABC CORPORATION"
+        android:gravity="center_horizontal|center_vertical"
+
+        />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/company"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+</RelativeLayout>

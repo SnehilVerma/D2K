@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dash"
+            android:icon="@drawable/home"
+            android:title="Dashboard"/>
+        <item
+            android:id="@+id/case_pending"
+            android:icon="@drawable/case_pending"
+            android:title="Case Pending"/>
+        <item
+            android:id="@+id/sarfa"
+            android:icon="@drawable/sarfaesi"
+            android:title="SARFAESI"/>
+        <item
+            android:id="@+id/ecs"
+            android:icon="@drawable/ecs_dishonour"
+            android:title="ECS Dishonour"/>
+
+        <item
+            android:id="@+id/cheque"
+            android:icon="@drawable/cheque_dishonour"
+            android:title="Cheque Dishonour"/>
+        <item
+            android:id="@+id/reports"
+            android:icon="@drawable/reports"
+            android:title="Reports"/>
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout"/>
+
+    </group>
+
+
+</menu>
